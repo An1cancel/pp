@@ -9,6 +9,10 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
     private final UserDao userDao = new UserDaoJDBCImpl();
 
+    public void closeConnection(){
+        userDao.closeConnection();
+    }
+
     public void createUsersTable() {
         userDao.createUsersTable();
     }
