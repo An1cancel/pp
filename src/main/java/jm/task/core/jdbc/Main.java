@@ -25,7 +25,7 @@ public class Main {
         userService.removeUserById(1);
         userService.dropUsersTable();
 
-        userService.closeConnection();
+
 
 
     }
